@@ -1,0 +1,31 @@
+  -- real_year
+CREATE DATABASE IF NOT EXISTS property_price;
+
+USE property_price;
+
+DROP TABLE real_year;
+
+CREATE TABLE real_year
+(
+date DATE,
+country_code VARCHAR(255),
+country VARCHAR(255),
+price DECIMAL(10,2) 
+);
+
+LOAD DATA INFILE 'real_year.csv'
+INTO TABLE real_year
+FIELDS TERMINATED BY ','
+ENCLOSED BY "'"
+LINES TERMINATED BY '\r\n'
+IGNORE 1 LINES
+(@date, @code, @country, @price)
+SET 
+	date = @date,
+	country_code = @code,
+	country = @country,
+    price = NULLIF(@price, 'NA');
+    
+SELECT *
+FROM real_year;
+    
