@@ -1,10 +1,10 @@
-'-- 1. Як змінилась ціна на житло протягом 2013-2023 року
+-- 1. Як змінилась ціна на житло протягом 2013-2023 року
 
 SELECT country,YEAR(date) as year, ROUND(AVG(price), 2) as avg_price
 FROM property_price.real_year
 GROUP BY country, year
 HAVING year >= 2013
-AND country NOT IN  ('Emerging market economies (aggregate)', 'Advanced economies', 'World', 'Euro area');'
+AND country NOT IN  ('Emerging market economies (aggregate)', 'Advanced economies', 'World', 'Euro area');
 
 
 -- 2. Ріст ціни протягом років в 10 країнах з найбільшим середнім ростом
