@@ -25,5 +25,5 @@ SET
 	date = @date,
 	country_code = @code,
 	country = @country,
-  price = NULLIF(@price, 'NA');
+  	price = NULLIF(@price, 'NA');
     
