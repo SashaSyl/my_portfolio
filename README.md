@@ -5,6 +5,7 @@
 Дашборди та візуалізація (Power BI) [тут](https://app.powerbi.com/view?r=eyJrIjoiOWQ1YzllMWItMWY3NC00MzA1LWFlMzgtMTEyOGUwNDk1NDgzIiwidCI6ImQ0NTFiZGY3LTVkNjgtNGFiOS05MTY1LTc5NGVkZGJhZTBmYSIsImMiOjl9)
 <details>
    <summary> Більше </summary>
+
 ## Загальна інформація про структури даних 
 
 Така таблиця була використана: real-year<br/>
