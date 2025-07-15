@@ -7,7 +7,7 @@ HAVING year >= 2013
 AND country NOT IN  ('Emerging market economies (aggregate)', 'Advanced economies', 'World', 'Euro area');
 
 
--- 2. Ріст ціни протягом років в 10 країнах з найбільшим середнім ростом
+-- 2. Ріст ціни протягом 10ти років в 5 країнах з найбільшим середнім ростом
 
 SELECT
   YEAR(r.date) AS year,
@@ -20,7 +20,7 @@ FROM property_price.real_year
 WHERE date >= 2013
 GROUP BY country
 ORDER BY avg_changes DESC
-LIMIT 10
+LIMIT 5
 ) AS top_countries
   ON r.country = top_countries.country
 WHERE r.date >= 2013
@@ -35,7 +35,7 @@ FROM property_price.real_year
 WHERE date >= 2013
 AND country NOT IN  ('Emerging market economies (aggregate)', 'Advanced economies', 'World', 'Euro area');
 
--- 3.2 Cередня зміна ціни по світу з 2013 по 2023 рік
+-- 3.2 Cередня зміна ціни по світу по рокам з 2013 по 2023 рік
 
 SELECT ROUND(AVG(price), 2) as avg_changes, year(date) as year 
 FROM property_price.real_year
