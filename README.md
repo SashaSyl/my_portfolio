@@ -48,6 +48,68 @@ Price(numeric) – ціна на житло <br/>
 ## Рекомендації (Recommendations)
 В даній ситуації краще не інвестувати в Туреччину, адже на графіку видно, що загальний відсоток росту ціни великий тільки через те, що в 2022-2023 році інфляція в Туреччині було високою. <br/>
 Менш ризиковіше буде інвестувати в Угорщину, Ісландію, Ірландію та Португалію. Вони мають не значну волатильність та достатньо високий сердній зростаючий відсоток. 
-<details>
 
+</details>
+
+# 2nd Progect. State Expenditures During the War
+## Introduction and General Description
+Ukraine is at war, and in recent years the situation has worsened, which is why budget expenditures were expected to increase, especially defense spending.<br/>
+Our goal is to determine whether defense spending has increased, its ranking among other spending categories, and its share of total expenditures.
+We will also examine whether the state has sufficient resources to cover expenses based on the received state revenue.<br/>
+Dashboard: [here](https://app.powerbi.com/view?r=eyJrIjoiMzIzZDE5NTYtMTgyYi00YzQzLThhZGItNTA0NjkxZTIwMzYwIiwidCI6ImQ0NTFiZGY3LTVkNjgtNGFiOS05MTY1LTc5NGVkZGJhZTBmYSIsImMiOjl9)
+
+<details>
+   <summary> More </summary>
+   
+## Data structure overview
+Two tables were used for analysis: budget and state_revenue.<br/>
+Structure of the first table – budget:<br/>
+•	date — monthly expenses for each sector from 2022 onward<br/>
+•	public_ord — public order and judicial authorities<br/>
+•	econom_activity — economic activity<br/>
+•	national_funct — general government functions<br/>
+•	defense — defense spending<br/>
+•	dept_service — debt servicing<br/>
+•	education — education spending<br/>
+•	healthcare — healthcare spending<br/>
+•	social_pro — social protection<br/>
+Structure of the second table – state_revenue:<br/>
+•	year — year<br/>
+•	revenue — state budget income<br/>
+
+<img width="703" height="481" alt="image" src="https://github.com/user-attachments/assets/f68da903-4312-4d13-a1b8-2b755d0fa85a" />
+
+Expenditure data source [here](https://opendatabot.ua/war)<br/>
+Revenue data source [here](https://index.minfin.com.ua/ua/finance/budget/gov/income/2022/)<br/>
+
+
+## Executive summary
+Between 2022 and 2024, defense expenditures ranged from 39% to 48% of total expenditures, making it the largest category.
+In 2023, defense spending increased significantly by 84.5%, while in 2024, the growth was only 9.9%.<br/>
+The state struggles to cover its expenses—almost all annual revenue goes to defense.
+
+## Insights deep dive
+### Expenditures by Year
+Over the past three years, defense spending has remained the highest among all expenditure categories. Public order and social protection ranked second and third, respectively. In 2022, defense expenditures amounted to UAH 1,137 billion; in 2023 — UAH 2,098 billion; and in 2024 — UAH 2,305 billion.<br/>
+As of 2025, data is already available for the first five months, showing UAH 1,125.4 billion spent on defense. If we divide this amount by five and project it for twelve months, the estimated annual expenditure would be around UAH 2,700 billion. This suggests that spending in this sector is likely to continue increasing.
+
+<img width="974" height="527" alt="image" src="https://github.com/user-attachments/assets/cf67f1a5-8a0c-4df6-8685-a5f3c9df6c4a" />
+
+### Structure of Defense Spending (2022–2024)
+Defense consistently made up more than one-third of all expenditures:<br/>
+2022: 39.4%<br/>
+2023: 48.5%<br/>
+2024: 47.8%<br/>
+Comparing 2022 and 2023:
++84.5% growth<br/>
+From 2023 to 2024:<br/>
+Only +9.9% growth<br/>
+Considering inflation >10% in 2024, real growth was negligible.
+The significant increase occurred between 2022 and 2023 only.
+Even adjusted: 84.5% - 25% inflation ≈ 59.5% effective growth.
+
+### Government Revenue and Expenditures
+The state has much higher expenditures than income, with defense spending nearly equaling total revenue.
+Thus, the budget is running a deficit, which negatively affects the economic condition and may increase monetary emission to cover growing defense needs.
+</details>
 
