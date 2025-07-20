@@ -1,0 +1,50 @@
+CREATE DATABASE IF NOT EXISTS budget;
+
+USE budget;
+
+DROP TABLE budget.expenses;
+
+CREATE TABLE expenses
+(
+date DATE,
+social_pro DECIMAL(10,1),
+public_ord DECIMAL(10,1),
+education DECIMAL(10,1),
+healthcare DECIMAL(10,1),
+defense DECIMAL(10,1),
+dept_service DECIMAL(10,1),
+national_funct DECIMAL(10,1),
+econom_activity DECIMAL(10,1)
+);
+
+LOAD DATA INFILE 'Budget.csv'
+INTO TABLE expenses
+FIELDS TERMINATED BY ','
+ENCLOSED BY "'"
+LINES TERMINATED BY '\r\n'
+IGNORE 1 LINES
+(@date, @social_pro, @public_ord, @education, @healthcare, @defense, @dept_service, @national_funct, @econom_activity)
+SET 
+	date = @date,
+	social_pro = @social_pro,
+	public_ord = @public_ord,
+    education = @education,
+	healthcare = @healthcare,
+    defense = @defense,
+	dept_service = @dept_service,
+	national_funct = @national_funct,
+    econom_activity = NULLIF(@econom_activity, 'NA');
+
+
+DROP TABLE budget. state_revenue;
+
+CREATE TABLE state_revenue 
+(
+  `year`  INT NOT NULL PRIMARY KEY,
+  `revenue` DECIMAL(10,1) NOT NULL
+);
+
+INSERT INTO state_revenue (`year`, `revenue`) VALUES
+  (2022, 1787395.6),
+  (2023, 2671998.0),
+  (2024, 3122713.4);
