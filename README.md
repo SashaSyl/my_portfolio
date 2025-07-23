@@ -2,7 +2,7 @@
 В даному проекті розглянуто відсоткова зміна реальної ціни на житло протягом 2013 – 2023 року. Наша ціль, знайти країну з найбільшим ростом в ціні, щоб довгострокові інвестиції в житлову нерухомість принесла максимум  прибутку.
 Для цього було знайдено середні відсотки по рокам по кожній країні, щоб знайти топ 5 країн з найбільшим показником. 
 
-Дашборди та візуалізація (Power BI) [тут](https://app.powerbi.com/view?r=eyJrIjoiOWQ1YzllMWItMWY3NC00MzA1LWFlMzgtMTEyOGUwNDk1NDgzIiwidCI6ImQ0NTFiZGY3LTVkNjgtNGFiOS05MTY1LTc5NGVkZGJhZTBmYSIsImMiOjl9)
+Дашборди та візуалізація (Power BI) [here](https://app.powerbi.com/view?r=eyJrIjoiOWQ1YzllMWItMWY3NC00MzA1LWFlMzgtMTEyOGUwNDk1NDgzIiwidCI6ImQ0NTFiZGY3LTVkNjgtNGFiOS05MTY1LTc5NGVkZGJhZTBmYSIsImMiOjl9)
 <details>
    <summary> Більше </summary>
 
