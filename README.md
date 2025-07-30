@@ -154,7 +154,6 @@ The control campaign proved to be more successful. It required less budget ($67K
 ## Insights deep dive
 The company ran one ad campaign as usual (Control Campaign), and the other with a new strategy (Test Campaign).
 The Control Campaign spent $67K, and the Test Campaign spent $77K.
-Even though the Test Campaign had higher costs and lower reach, the ad attracted more interest.
 Despite the higher spending, the test campaign reached fewer people overall. While the test ad generated more interest per viewer, it did not translate into better performance — more purchases came from the control campaign.
 
 <img width="974" height="541" alt="image" src="https://github.com/user-attachments/assets/c6c2e441-02cb-4baf-a325-d316c2396e5c" />
