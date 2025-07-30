@@ -173,8 +173,7 @@ So, the higher percentage in the Control Campaign shows it was more efficient.
 ### Purchases per $1
 The results show that more buyers came during the Test Campaign, as the "purchases per $1" metric was higher by about 5K customers.
 
-## Conclusion
-In conclusion, the Test Campaign was successful:
+**In conclusion**, the Test Campaign was successful:
 Even with higher spending and lower reach, it resulted in more real customers who were interested and ready to purchase the company’s product or service.
 
 </details>
