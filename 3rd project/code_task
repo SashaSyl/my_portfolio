@@ -1,4 +1,4 @@
--- 1. Порівняти показники двох таблиць
+-- Compare the indicators of both tables
 SELECT *
 FROM abtest.control_group as c
 JOIN abtest.test_group as t
@@ -6,7 +6,7 @@ ON c.date = t.date
 ORDER BY c.date
 ;
 
--- 2.	Який відсоток покупців від загальної кількості охоплення по двом таблицям 
+-- What percentage of add-to-cart actions out of total reach in both tables
 SELECT 
   c.reach, 
   c.add_cart, 
@@ -19,7 +19,7 @@ ON c.date = t.date
 ORDER BY c.date
 ;
 
--- 3.	Відсоток унікальних переглядів по двом таблицям 
+-- Percentage of unique views (reach) from total impressions across both tables
 SELECT 
   c.impressions, 
   c.reach, 
@@ -33,14 +33,14 @@ ON c.date = t.date
 ORDER BY c.date
 ;
 
--- 4. Кількість переглядів за один долар витрат по двом таблицям 
+-- Buyers per dollar spent across both tables
 SELECT 
-  c.impressions, 
+  c.add_cart, 
   c.spend, 
-  ROUND(( c.impressions/c.spend)*100,0)as proc_c, 
-  t.impressions, 
+  ROUND(( c.add_cart/c.spend),2)as proc_c, 
+  t.add_cart, 
   t.spend,
-  ROUND(( t.impressions/t.spend)*100,0)as proc_t
+  ROUND(( t.add_cart/t.spend),2)as proc_t
 FROM abtest.control_group as c
 JOIN abtest.test_group as t
 ON c.date = t.date
