@@ -143,6 +143,9 @@ Two campaigns were performed by the company:<br/>
 •	Control Campaign<br/>
 •	Test Campaign<br/>
 
+<img width="740" height="411" alt="image" src="https://github.com/user-attachments/assets/c564acac-5c44-4b0f-9afe-a878e394c085" />
+
+
  <img width="612" height="628" alt="image" src="https://github.com/user-attachments/assets/8a30aaaa-9970-479c-8399-974ebd8d91f2" />
 
 Data set [here](https://www.kaggle.com/datasets/amirmotefaker/ab-testing-dataset/data)
