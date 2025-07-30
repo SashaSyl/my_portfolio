@@ -51,7 +51,7 @@ Price(numeric) – ціна на житло <br/>
 
 </details>
 
-# 2nd Progect. State Expenditures During the War
+# 2nd Project. State Expenditures During the War
 ## Introduction and General Description
 Ukraine is at war, and in recent years the situation has worsened, which is why budget expenditures were expected to increase, especially defense spending.<br/>
 Our goal is to determine whether defense spending has increased, its ranking among other spending categories, and its share of total expenditures.
@@ -112,4 +112,72 @@ Even adjusted: 84.5% - 25% inflation ≈ 59.5% effective growth.
 The state has much higher expenditures than income, with defense spending nearly equaling total revenue.
 Thus, the budget is running a deficit, which negatively affects the economic condition and may increase monetary emission to cover growing defense needs.
 </details>
+
+# 3rd Project. A/B test
+An A/B test was conducted by a company that launched two campaigns:<br/>
+•	Control Campaign<br/>
+•	Test Campaign<br/>
+Their goal was to increase the number of actual customers.
+My goal was to determine whether the test campaign showed success over the course of a month.
+So, I compared key metrics to understand whether:<br/>
+•	more customers came from the reach in the test campaign,<br/>
+•	the percentage of reach among total impressions was higher,<br/>
+•	the spending on the test campaign was effective.<br/>
+
+<details>
+   <summary> More </summary>
+   
+## Data structure overview
+A/B testing helps in finding a better approach to finding customers, marketing products, getting a higher reach, or anything that helps a business convert most of its target customers into actual customers. <br/>
+Below are all the features in the dataset:<br/>
+•	Campaign Name: The name of the campaign<br/>
+•	Date: Date of the record<br/>
+•	Spend: Amount spent on the campaign in dollars<br/>
+•	of Impressions: Number of impressions the ad crossed through the campaign<br/>
+•	Reach: The number of unique impressions received in the ad<br/>
+•	of Website Clicks: Number of website clicks received through the ads<br/>
+•	of Searches: Number of users who performed searches on the website<br/>
+•	of View Content: Number of users who viewed content and products on the website<br/>
+•	of Add to Cart: Number of users who added products to the cart<br/>
+•	of Purchase: Number of purchases<br/>
+Two campaigns were performed by the company:<br/>
+•	Control Campaign<br/>
+•	Test Campaign<br/>
+
+ <img width="612" height="628" alt="image" src="https://github.com/user-attachments/assets/8a30aaaa-9970-479c-8399-974ebd8d91f2" />
+
+Data set:[here](https://www.kaggle.com/datasets/amirmotefaker/ab-testing-dataset/data)
+
+## Executive summary
+The company ran an A/B test with two different ad campaigns lasting one month. The first was a regular campaign (control), and the second was a new version (test campaign).<br/>
+Although the test campaign had higher ad spending and lower reach, it delivered better results — generating 10.9K customers per $1 spent.
+In comparison, the control campaign gained 5K fewer customers for the same spending, indicating that the test campaign was more successful.<br/>
+
+## Insights deep dive
+The company ran one ad campaign as usual (Control Campaign), and the other with a new strategy (Test Campaign).
+The Control Campaign spent $67K, and the Test Campaign spent $77K.
+Even though the Test Campaign had higher costs and lower reach, the ad attracted more interest.
+However, this did not lead to significantly more purchases — in fact, the Control Campaign led to more purchases.
+
+<img width="819" height="459" alt="image" src="https://github.com/user-attachments/assets/ce6dfaa1-004e-4fab-be85-fc028fcbe812" />
+
+### % of Customers from Reach
+The percentage of customers from the total reach during the ad campaign was higher in the Test Campaign.
+On some days, the metric exceeded 5%, which is a very good result — especially when compared to the Control Campaign where it stayed below 4%, though more stable.
+
+### % of Unique Views from Total Impressions
+The table provided information on total impressions and unique reach.
+It’s important for more potential clients to see the product within the allocated budget.
+The Control Campaign had 81% unique views, while the Test Campaign had 71.7%.
+So, the higher percentage in the Control Campaign shows it was more efficient.
+
+### Purchases per $1
+The results show that more buyers came during the Test Campaign, as the "purchases per $1" metric was higher by about 5K customers.
+
+## Conclusion
+In conclusion, the Test Campaign was successful:
+Even with higher spending and lower reach, it resulted in more real customers who were interested and ready to purchase the company’s product or service.
+
+</details>
+
 
