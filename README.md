@@ -173,7 +173,7 @@ So, the higher percentage in the Control Campaign shows it was more efficient.
 ### Purchases per $1
 Ultimately, more customers were acquired during the control campaign, as it showed a higher number of customers per dollar spent, outperforming the test campaign by about 7 customers.
 
-**In conclusion**, the Test Campaign was successful:
+**In conclusion**, the Test Campaign was successful.
 The control campaign outperformed the test campaign in key performance areas:<br/>
 •	It spent less money <br/>
 •	Reached more people <br/>
