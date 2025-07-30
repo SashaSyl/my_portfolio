@@ -1,6 +1,6 @@
 -- Expenditures by Year, UAH billion
 SELECT year(date) as year, 
-SUM(social_pro) AS total_social_pro, 
+    SUM(social_pro) AS total_social_pro, 
     SUM(public_ord) AS total_public_ord, 
     SUM(education) AS total_education,
     SUM(healthcare) AS total_healthcare,
@@ -15,26 +15,26 @@ ORDER BY year
 
 -- Percentage Change in Defense Expenditures Over 3 Years, UAH billion
 SELECT year(date) as year, 
-    SUM(defense) AS total_defense,
-    ROUND(100*(SUM(defense)-LAG(SUM(defense)) OVER (ORDER BY YEAR(date)))/LAG(SUM(defense))OVER (ORDER BY YEAR(date)),1) as percent_change
+	SUM(defense) AS total_defense,
+	ROUND(100*(SUM(defense)-LAG(SUM(defense)) OVER (ORDER BY YEAR(date)))/LAG(SUM(defense))OVER (ORDER BY YEAR(date)),1) as percent_change
 FROM budget.expenses 
 Group BY year
 HAVING year != 2025
 ORDER BY year;
 
 -- Percentage of Defense Expenditures in the structure, %
-SELECT year(date) as year, 
+SELECT year(date) as year,
 	SUM( social_pro +public_ord + education + healthcare + defense + dept_service + national_funct + econom_activity) as sum_exp,
-    ROUND(SUM(defense)/SUM( social_pro +public_ord + education + healthcare + defense + dept_service + national_funct + econom_activity)*100, 1) as struct
+	ROUND(SUM(defense)/SUM( social_pro +public_ord + education + healthcare + defense + dept_service + national_funct + econom_activity)*100, 1) as struct
 FROM budget.expenses
 GROUP by year
 HAVING year !=2025;
 
 -- Budget Deficit/Surplus
 SELECT sr.year , 
-SUM( social_pro +public_ord + education + healthcare + defense + dept_service + national_funct + econom_activity) as sum_exp,
-ROUND(sr.revenue/1000,1) as new_revenue,
-ROUND(sr.revenue/1000 - SUM( social_pro +public_ord + education + healthcare + defense + dept_service + national_funct + econom_activity),1)  as diff
+	SUM( social_pro +public_ord + education + healthcare + defense + dept_service + national_funct + econom_activity) as sum_exp,
+	ROUND(sr.revenue/1000,1) as new_revenue,
+	ROUND(sr.revenue/1000 - SUM( social_pro +public_ord + education + healthcare + defense + dept_service + national_funct + econom_activity),1)  as diff
 FROM budget.expenses as exp
 JOIN budget.state_revenue as sr
 ON YEAR(exp.date) = sr.year
