@@ -20,7 +20,8 @@ SELECT year(date) as year,
 FROM budget.expenses 
 Group BY year
 HAVING year != 2025
-ORDER BY year;
+ORDER BY year
+;
 
 -- Percentage of Defense Expenditures in the structure, %
 SELECT year(date) as year,
@@ -28,7 +29,8 @@ SELECT year(date) as year,
 	ROUND(SUM(defense)/SUM( social_pro +public_ord + education + healthcare + defense + dept_service + national_funct + econom_activity)*100, 1) as struct
 FROM budget.expenses
 GROUP by year
-HAVING year !=2025;
+HAVING year !=2025
+;
 
 -- Budget Deficit/Surplus
 SELECT sr.year , 
@@ -40,4 +42,5 @@ JOIN budget.state_revenue as sr
 ON YEAR(exp.date) = sr.year
 WHERE sr.year>= '2022'
 GROUP BY sr.year, sr.revenue
-ORDER BY sr.year;
+ORDER BY sr.year
+;
