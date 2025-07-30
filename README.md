@@ -52,7 +52,6 @@ Price(numeric) – ціна на житло <br/>
 </details>
 
 # 2nd Project. State Expenditures During the War
-## Introduction and General Description
 Ukraine is at war, and in recent years the situation has worsened, which is why budget expenditures were expected to increase, especially defense spending.<br/>
 Our goal is to determine whether defense spending has increased, its ranking among other spending categories, and its share of total expenditures.
 We will also examine whether the state has sufficient resources to cover expenses based on the received state revenue.<br/>
