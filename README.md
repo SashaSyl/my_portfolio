@@ -1,4 +1,4 @@
-# Проект 1. Ріст реальної ціни на житло
+# Проект 1. Ріст Реальної Ціни На Житло
 В даному проекті розглянуто відсоткова зміна реальної ціни на житло протягом 2013 – 2023 року. Наша ціль, знайти країну з найбільшим ростом в ціні, щоб довгострокові інвестиції в житлову нерухомість принесла максимум  прибутку.
 Для цього було знайдено середні відсотки по рокам по кожній країні, щоб знайти топ 5 країн з найбільшим показником. 
 
@@ -112,7 +112,7 @@ The state has much higher expenditures than income, with defense spending nearly
 Thus, the budget is running a deficit, which negatively affects the economic condition and may increase monetary emission to cover growing defense needs.
 </details>
 
-# 3rd Project. A/B test
+# 3rd Project. A/B Test
 An A/B test was conducted by a company that launched two campaigns:<br/>
 •	Control Campaign<br/>
 •	Test Campaign<br/>
