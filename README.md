@@ -143,10 +143,9 @@ Two campaigns were performed by the company:<br/>
 •	Control Campaign<br/>
 •	Test Campaign<br/>
 
-<img width="740" height="411" alt="image" src="https://github.com/user-attachments/assets/c564acac-5c44-4b0f-9afe-a878e394c085" />
 
+<img width="496" height="509" alt="image" src="https://github.com/user-attachments/assets/bef2a64d-d3cd-4920-9c6b-97454fc63291" />
 
- <img width="612" height="628" alt="image" src="https://github.com/user-attachments/assets/8a30aaaa-9970-479c-8399-974ebd8d91f2" />
 
 Data set [here](https://www.kaggle.com/datasets/amirmotefaker/ab-testing-dataset/data)
 
@@ -159,7 +158,7 @@ The company ran one ad campaign as usual (Control Campaign), and the other with 
 The Control Campaign spent $67K, and the Test Campaign spent $77K.
 Despite the higher spending, the test campaign reached fewer people overall. While the test ad generated more interest per viewer, it did not translate into better performance — more purchases came from the control campaign.
 
-<img width="974" height="541" alt="image" src="https://github.com/user-attachments/assets/c6c2e441-02cb-4baf-a325-d316c2396e5c" />
+<img width="740" height="411" alt="image" src="https://github.com/user-attachments/assets/c564acac-5c44-4b0f-9afe-a878e394c085" />
 
 ### % of Customers from Reach
 The percentage of customers from the total reach during the ad campaign was higher in the Test Campaign.
