@@ -1,10 +1,13 @@
 -- 1. Як змінилась ціна на житло протягом 2013-2023 року
 
-SELECT country,YEAR(date) as year, ROUND(AVG(price), 2) as avg_price
+SELECT country,
+        YEAR(date) as year,
+        ROUND(AVG(price), 2) as avg_price
 FROM property_price.real_year
 GROUP BY country, year
 HAVING year >= 2013
-AND country NOT IN  ('Emerging market economies (aggregate)', 'Advanced economies', 'World', 'Euro area');
+AND country NOT IN  ('Emerging market economies (aggregate)', 'Advanced economies', 'World', 'Euro area')
+;
 
 
 -- 2. Ріст ціни протягом 10ти років в 5 країнах з найбільшим середнім ростом
@@ -15,17 +18,19 @@ SELECT
   ROUND(AVG(r.price), 2) AS avg_price_yearly
 FROM property_price.real_year AS r
 JOIN (
-  SELECT country, ROUND(AVG(price), 2) as avg_changes
-FROM property_price.real_year
-WHERE date >= 2013
-GROUP BY country
-ORDER BY avg_changes DESC
-LIMIT 5
-) AS top_countries
-  ON r.country = top_countries.country
+  SELECT country, 
+          ROUND(AVG(price), 2) as avg_changes
+  FROM property_price.real_year
+  WHERE date >= 2013
+  GROUP BY country
+  ORDER BY avg_changes DESC
+  LIMIT 5
+  ) AS top_countries
+ON r.country = top_countries.country
 WHERE r.date >= 2013
 GROUP BY r.country, YEAR(r.date)
-ORDER BY r.country, YEAR(r.date);
+ORDER BY r.country, YEAR(r.date)
+;
 
 
 -- 3.1 Загальнй відсоток зміни реальної ціни протягом 2013-2023 року по світу
@@ -33,13 +38,16 @@ ORDER BY r.country, YEAR(r.date);
 SELECT ROUND(AVG(price), 2) as avg_changes
 FROM property_price.real_year
 WHERE date >= 2013
-AND country NOT IN  ('Emerging market economies (aggregate)', 'Advanced economies', 'World', 'Euro area');
+AND country NOT IN  ('Emerging market economies (aggregate)', 'Advanced economies', 'World', 'Euro area')
+;
 
 -- 3.2 Cередня зміна ціни по світу по рокам з 2013 по 2023 рік
 
-SELECT ROUND(AVG(price), 2) as avg_changes, year(date) as year 
+SELECT ROUND(AVG(price), 2) as avg_changes, 
+        year(date) as year 
 FROM property_price.real_year
 WHERE date >= 2013
 AND country NOT IN  ('Emerging market economies (aggregate)', 'Advanced economies', 'World', 'Euro area')
-Group by year ;
+Group by year 
+;
 
