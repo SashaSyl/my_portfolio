@@ -1,0 +1,49 @@
+-- 1. Порівняти показники двох таблиць
+SELECT *
+FROM abtest.control_group as c
+JOIN abtest.test_group as t
+ON c.date = t.date
+ORDER BY c.date
+;
+
+-- 2.	Який відсоток покупців від загальної кількості охоплення по двом таблицям 
+SELECT 
+  c.reach, 
+  c.add_cart, 
+  ROUND((c.add_cart/c.reach)*100,2) as proc_c,t.reach, 
+  t.add_cart, 
+  ROUND((t.add_cart/t.reach)*100,2) as proc_t
+FROM abtest.control_group as c
+JOIN abtest.test_group as t
+ON c.date = t.date
+ORDER BY c.date
+;
+
+-- 3.	Відсоток унікальних переглядів по двом таблицям 
+SELECT 
+  c.impressions, 
+  c.reach, 
+  ROUND(( c.impressions/c.reach)*100,2) as proc_c, 
+  t.impressions, 
+  t.reach,
+  ROUND(( t.impressions/t.reach)*100,2) as proc_t
+FROM abtest.control_group as c
+JOIN abtest.test_group as t
+ON c.date = t.date
+ORDER BY c.date
+;
+
+-- 4. Кількість переглядів за один долар витрат по двом таблицям 
+SELECT 
+  c.impressions, 
+  c.spend, 
+  ROUND(( c.impressions/c.spend)*100,0)as proc_c, 
+  t.impressions, 
+  t.spend,
+  ROUND(( t.impressions/t.spend)*100,0)as proc_t
+FROM abtest.control_group as c
+JOIN abtest.test_group as t
+ON c.date = t.date
+ORDER BY c.date
+;
+
