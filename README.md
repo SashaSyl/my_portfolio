@@ -149,16 +149,15 @@ Data set [here](https://www.kaggle.com/datasets/amirmotefaker/ab-testing-dataset
 
 ## Executive summary
 The company ran an A/B test with two different ad campaigns lasting one month. The first was a regular campaign (control), and the second was a new version (test campaign).<br/>
-Although the test campaign had higher ad spending and lower reach, it delivered better results — generating 10.9K customers per $1 spent.
-In comparison, the control campaign gained 5K fewer customers for the same spending, indicating that the test campaign was more successful.<br/>
+The control campaign proved to be more successful. It required less budget ($67K), reached a wider audience, and delivered better results in terms of customers per dollar spent, attracting approximately 17 customers.<br/>
 
 ## Insights deep dive
 The company ran one ad campaign as usual (Control Campaign), and the other with a new strategy (Test Campaign).
 The Control Campaign spent $67K, and the Test Campaign spent $77K.
 Even though the Test Campaign had higher costs and lower reach, the ad attracted more interest.
-However, this did not lead to significantly more purchases — in fact, the Control Campaign led to more purchases.
+Despite the higher spending, the test campaign reached fewer people overall. While the test ad generated more interest per viewer, it did not translate into better performance — more purchases came from the control campaign.
 
-<img width="819" height="459" alt="image" src="https://github.com/user-attachments/assets/ce6dfaa1-004e-4fab-be85-fc028fcbe812" />
+<img width="974" height="541" alt="image" src="https://github.com/user-attachments/assets/c6c2e441-02cb-4baf-a325-d316c2396e5c" />
 
 ### % of Customers from Reach
 The percentage of customers from the total reach during the ad campaign was higher in the Test Campaign.
@@ -171,10 +170,15 @@ The Control Campaign had 81% unique views, while the Test Campaign had 71.7%.
 So, the higher percentage in the Control Campaign shows it was more efficient.
 
 ### Purchases per $1
-The results show that more buyers came during the Test Campaign, as the "purchases per $1" metric was higher by about 5K customers.
+Ultimately, more customers were acquired during the control campaign, as it showed a higher number of customers per dollar spent, outperforming the test campaign by about 7 customers.
 
 **In conclusion**, the Test Campaign was successful:
-Even with higher spending and lower reach, it resulted in more real customers who were interested and ready to purchase the company’s product or service.
+The control campaign outperformed the test campaign in key performance areas:<br/>
+•	It spent less money <br/>
+•	Reached more people <br/>
+•	Showed stable customer inflow indicators <br/>
+As a result, it stands out as the more effective advertising strategy.<br/>
+
 
 </details>
 
