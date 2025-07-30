@@ -1,0 +1,94 @@
+CREATE DATABASE IF NOT EXISTS abtest;
+
+USE abtest;
+
+DROP TABLE abtest.control_group;
+
+DROP TABLE abtest.test_group;
+
+CREATE TABLE control_group
+(
+compaing_name VARCHAR(255), 
+date DATE,
+spend int,
+impressions int,
+reach int,
+website_clicks int,
+searches int,
+view_content int,
+add_cart int,
+purchase int
+);
+
+LOAD DATA INFILE 'control_group.csv'
+INTO TABLE control_group
+FIELDS TERMINATED BY ','
+ENCLOSED BY "'"
+LINES TERMINATED BY '\r\n'
+IGNORE 1 LINES
+(@compaing_name , @date ,
+@spend,
+@impressions,
+@reach ,
+@website_clicks ,
+@searches ,
+@view_content ,
+@add_cart ,
+@purchase )
+SET 
+	compaing_name = @compaing_name,
+	date = @date,
+	spend = @spend,
+  impressions = NULLIF(@impressions, 'NA'),
+	reach = NULLIF(@reach,'NA'),
+  website_clicks = NULLIF(@website_clicks,'NA'),
+	searches = NULLIF(@searches,'NA'),
+ 	view_content = NULLIF(@view_content,'NA'),
+  add_cart = NULLIF(@add_cart, 'NA'),
+  purchase = NULLIF(@purchase, 'NA');
+
+SELECT *
+FROM abtest.control_group;
+
+CREATE TABLE test_group
+(
+compaing_name VARCHAR(255), 
+date DATE,
+spend int,
+impressions int,
+reach int,
+website_clicks int,
+searches int,
+view_content int,
+add_cart int,
+purchase int
+);
+
+LOAD DATA INFILE 'test_group.csv'
+INTO TABLE test_group
+FIELDS TERMINATED BY ','
+ENCLOSED BY "'"
+LINES TERMINATED BY '\r\n'
+IGNORE 1 LINES
+(@compaing_name , @date ,
+@spend,
+@impressions,
+@reach ,
+@website_clicks ,
+@searches ,
+@view_content ,
+@add_cart ,
+@purchase )
+SET 
+	compaing_name = @compaing_name,
+	date = @date,
+	spend = @spend,
+  impressions = NULLIF(@impressions, 'NA'),
+	reach = NULLIF(@reach,'NA'),
+  website_clicks = NULLIF(@website_clicks,'NA'),
+	searches = NULLIF(@searches,'NA'),
+	view_content = NULLIF(@view_content,'NA'),
+  add_cart = NULLIF(@add_cart, 'NA'),
+  purchase = NULLIF(@purchase, 'NA');
+
+SELECT * FROM abtest.test_group;
