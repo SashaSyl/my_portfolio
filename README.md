@@ -55,7 +55,7 @@ Price(numeric) – ціна на житло <br/>
 Ukraine is at war, and in recent years the situation has worsened, which is why budget expenditures were expected to increase, especially defense spending.<br/>
 Our goal is to determine whether defense spending has increased, its ranking among other spending categories, and its share of total expenditures.
 We will also examine whether the state has sufficient resources to cover expenses based on the received state revenue.<br/>
-Dashboard: [here](https://app.powerbi.com/view?r=eyJrIjoiMzIzZDE5NTYtMTgyYi00YzQzLThhZGItNTA0NjkxZTIwMzYwIiwidCI6ImQ0NTFiZGY3LTVkNjgtNGFiOS05MTY1LTc5NGVkZGJhZTBmYSIsImMiOjl9)
+Dashboard [here](https://app.powerbi.com/view?r=eyJrIjoiMzIzZDE5NTYtMTgyYi00YzQzLThhZGItNTA0NjkxZTIwMzYwIiwidCI6ImQ0NTFiZGY3LTVkNjgtNGFiOS05MTY1LTc5NGVkZGJhZTBmYSIsImMiOjl9)
 
 <details>
    <summary> More </summary>
@@ -145,7 +145,7 @@ Two campaigns were performed by the company:<br/>
 
  <img width="612" height="628" alt="image" src="https://github.com/user-attachments/assets/8a30aaaa-9970-479c-8399-974ebd8d91f2" />
 
-Data set:[here](https://www.kaggle.com/datasets/amirmotefaker/ab-testing-dataset/data)
+Data set [here](https://www.kaggle.com/datasets/amirmotefaker/ab-testing-dataset/data)
 
 ## Executive summary
 The company ran an A/B test with two different ad campaigns lasting one month. The first was a regular campaign (control), and the second was a new version (test campaign).<br/>
