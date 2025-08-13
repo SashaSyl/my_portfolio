@@ -158,7 +158,7 @@ The company ran one ad campaign as usual (Control Campaign), and the other with 
 The Control Campaign spent $67K, and the Test Campaign spent $77K.
 Despite the higher spending, the test campaign reached fewer people overall. While the test ad generated more interest per viewer, it did not translate into better performance — more purchases came from the control campaign.
 
-<img width="740" height="411" alt="image" src="https://github.com/user-attachments/assets/c564acac-5c44-4b0f-9afe-a878e394c085" />
+<img width="996" height="514" alt="image" src="https://github.com/user-attachments/assets/5581d037-6286-43bd-bdb8-b77d08e115a4" />
 
 ### % of Customers from Reach
 The percentage of customers from the total reach during the ad campaign was higher in the Test Campaign.
