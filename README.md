@@ -8,10 +8,10 @@
 
 ## Загальна інформація про структури даних (Data structure overview)
 
-Така таблиця була використана: real-year<br/>
+Така таблиця була використана: real-year<br>
 Туди входили такі колонки: <br/>
 Date(date) – дата встановленої ціни на житло поквартально<br/>
-Country(string) – 59 країн світу <br/>
+Country(string) – 59 країн світу<br/>
 Price(numeric) – ціна на житло <br/>
 
 |**Table**     |   **real_year**  |
@@ -151,7 +151,7 @@ Data set [here](https://www.kaggle.com/datasets/amirmotefaker/ab-testing-dataset
 
 ## Executive summary
 The company ran an A/B test with two different ad campaigns lasting one month. The first was a regular campaign (control), and the second was a new version (test campaign).<br/>
-The control campaign proved to be more successful. It required less budget ($67K), reached a wider audience, and delivered better results in terms of customers per dollar spent, attracting approximately 17 customers.<br/>
+The control campaign proved to be more successful. It required a smaller budget ($67K), reached a wider audience, and delivered better results in terms of the number of customers.<br/>
 
 ## Insights deep dive
 The company ran one ad campaign as usual (Control Campaign), and the other with a new strategy (Test Campaign).
@@ -170,11 +170,11 @@ It’s important for more potential clients to see the product within the alloca
 The Control Campaign had 81% unique views, while the Test Campaign had 71.7%.
 So, the higher percentage in the Control Campaign shows it was more efficient.
 
-### Purchases per $1
-Ultimately, more customers were acquired during the control campaign, as it showed a higher number of customers per dollar spent, outperforming the test campaign by about 7 customers.
+### Cost per costumer
+During the control campaign, it was cheaper to acquire a customer than during the test campaign, where the cost per customer was $1.6 higher.
 
-**In conclusion**, the Test Campaign was successful.
-The control campaign outperformed the test campaign in key performance areas:<br/>
+**In conclusion**,<br/>
+the control campaign outperformed the test campaign in key performance areas:<br/>
 •	It spent less money <br/>
 •	Reached more people <br/>
 •	Showed stable customer inflow indicators <br/>
